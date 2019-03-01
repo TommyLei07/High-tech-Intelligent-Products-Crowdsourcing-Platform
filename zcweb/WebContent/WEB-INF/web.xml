@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+    <servlet>
+        <servlet-name>ForeServlet</servlet-name>
+        <servlet-class>zcweb.servlet.ForeServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ForeServlet</servlet-name>
+        <url-pattern>/foreServlet</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>ProjectServlet</servlet-name>
+        <servlet-class>zcweb.servlet.ProjectServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ProjectServlet</servlet-name>
+        <url-pattern>/projectServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>zcweb.servlet.LoginServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+     <servlet>
+        <servlet-name>ReviewServlet</servlet-name>
+        <servlet-class>zcweb.servlet.ReviewServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ReviewServlet</servlet-name>
+        <url-pattern>/reviewServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>OrderServlet</servlet-name>
+        <servlet-class>zcweb.servlet.OrderServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>OrderServlet</servlet-name>
+        <url-pattern>/orderServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>zcweb.servlet.UserServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/userServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ProductImageServlet</servlet-name>
+        <servlet-class>zcweb.servlet.ProductImageServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ProductImageServlet</servlet-name>
+        <url-pattern>/productImageServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>CategoryServlet</servlet-name>
+        <servlet-class>zcweb.servlet.CategoryServlet</servlet-class>
+    </servlet>
+
+
+
+    <servlet>
+        <servlet-name>ProductServlet</servlet-name>
+        <servlet-class>zcweb.servlet.ProductServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ProductServlet</servlet-name>
+        <url-pattern>/productServlet</url-pattern>
+    </servlet-mapping>
+     
+    <servlet-mapping>
+        <servlet-name>CategoryServlet</servlet-name>
+        <url-pattern>/categoryServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PropertyServlet</servlet-name>
+        <servlet-class>zcweb.servlet.PropertyServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>PropertyServlet</servlet-name>
+        <url-pattern>/propertyServlet</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>zcweb.filter.EncodingFilter</filter-class>
+    </filter>
+ 
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>    
+    
+    <filter>
+        <filter-name>BackServletFilter</filter-name>
+        <filter-class>zcweb.filter.BackServletFilter</filter-class>
+    </filter>
+ 
+    <filter-mapping>
+        <filter-name>BackServletFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    
+    <filter>
+        <filter-name>ForeAuthFilter</filter-name>
+        <filter-class>zcweb.filter.ForeAuthFilter</filter-class>
+    </filter>
+ 
+    <filter-mapping>
+        <filter-name>ForeAuthFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>      
+
+    <filter>
+        <filter-name>ForeServletFilter</filter-name>
+        <filter-class>zcweb.filter.ForeServletFilter</filter-class>
+    </filter>
+ 
+    <filter-mapping>
+        <filter-name>ForeServletFilter</filter-name>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>REQUEST</dispatcher>        
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    
+  
+        
+</web-app>
